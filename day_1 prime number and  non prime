@@ -1,0 +1,15 @@
+// Prime number abd not prime number
+
+        import java.util.Scanner;
+        public class polymorphim {
+            public static void main(String[] args) {
+                Scanner sc =new Scanner(System.in);
+                int count= sc.nextInt();
+        if(count % 2==0) {
+            System.out.println("prime");
+        }
+          else{
+              System.out.println("not prime");
+          }
+       }
+    }
