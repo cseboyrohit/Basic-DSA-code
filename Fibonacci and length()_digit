@@ -1,0 +1,39 @@
+import java.util.Scanner;
+   // fibonacci Series
+public class new1 {
+       public static
+       void main(String[] args) {
+           Scanner sc = new Scanner(System.in);
+        int num=sc.nextInt();
+        int a=0;
+        int b=1;
+        for (int i=0; i<=num; i++){
+            System.out.print(" "+a);
+           int c=a+b;
+              a=b;
+              b=c;
+
+        }
+    }
+}
+
+        ////---> Question no 2
+ // Count the length The Digit in that number;
+
+import java.util.Scanner;
+   // fibonacci Series
+public class new1 {
+       public static
+       void main(String[] args) {
+
+           // Count the length The Digit in that number;
+           Scanner sc = new Scanner(System.in);
+           int num = sc.nextInt();
+           int digit = 0;
+           while(num !=0){
+                num=num/10;
+                digit++;
+               System.out.printf(" "+digit);
+           }
+       }
+   }
