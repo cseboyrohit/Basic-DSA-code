@@ -1,0 +1,53 @@
+import java.util.Scanner;
+
+public class pepeVideo_28 {
+    public static void main(String[] args) {
+     /*
+      Scanner sc= new Scanner(System.in);
+      System.out.println("Enter Number");
+       int n=sc.nextInt();
+       for (int div=2; div*div<n; div++){
+           while(n%div==0){
+             n=n/div;
+             System.out.print(" "+div);
+           }
+
+       }
+      if(n!=0){
+        System.out.print(" "+n);
+      }     
+    }
+    
+}
+*/
+   // Question no 2
+   //Pythagorean triples
+   // Formul: a2 + b2 = c2
+   Scanner sc= new Scanner(System.in);
+    int a= sc.nextInt();
+    int b= sc.nextInt();
+    int c= sc.nextInt();
+     
+      int max=a;
+      if(b>=max){
+         max=b;
+      }
+      if(c>=max){
+         max=c;
+      }
+      if(max==a){
+        boolean  flag = (b * b + c * c == a * a);    
+        System.out.println(flag);
+      }
+      if(max==b){
+        boolean flag= (c*c + a*a ==b*b);
+        System.out.println(flag);
+      }
+      if(max==c){
+        boolean flag=(a * a + b * b== c * c);
+        System.out.println(flag);
+      }
+
+    
+  }
+}
