@@ -1,0 +1,183 @@
+// Pattern no-5
+
+  // Pattern Question -5
+ import java.util.*;
+
+public class Pattern{
+    public static
+    void main(String[] args) {
+        Scanner sc =new Scanner(System.in);
+          int n= sc.nextInt();
+          int spaces=n/2;
+          int stars= 1;
+           for (int i=1; i<=n; i++){ 
+               for (int j=1; j<=spaces; j++){
+                   System.out.print("\t");
+               }
+               for (int j=1; j<=stars; j++){
+                   System.out.print("*\t");
+               }
+               System.out.println();
+               if(i<=n/2){
+                  spaces--;
+                  stars +=2;
+               }
+               else {
+                   spaces ++;
+                   stars -=2;
+               }}
+    }
+}
+--------------------------------------
+// ----> Pattern no-6  <-------
+
+  //patter Question-6;
+import java.util.Scanner;
+
+public class Pattern_6 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+         int n= sc.nextInt();
+         int stars=n/2+1;
+         int spaces=1;
+         for(int i=1; i<=n; i++){
+             for (int j=1; j<=stars; j++){
+                 System.out.print("*\t");
+             }
+             for(int j=1; j<=spaces; j++){
+                 System.out.print("\t");
+             }
+             for(int j=1; j<=stars; j++){
+                 System.out.print("*\t");
+             }
+             if(i<=n/2){
+                 stars--;
+                 spaces +=2;
+             }
+             else {
+                 stars++;
+                 spaces -=2;
+
+             }
+             System.out.println();
+         }
+    }
+}
+
+------------------------------------------
+   // Question no- 7;
+       int n= sc.nextInt();
+        for(int i=1; i<=n;i++){
+            for(int j=1; j<=i; j++){
+                if(j==i){
+                    System.out.print("*\t");
+            }
+                else{
+                    System.out.print("\t");
+                }
+            }
+            System.out.println();
+        }
+    }
+}
+----------------------------------------
+// ----> Pattern no-8  <-------
+import java.util.Scanner;
+
+public class pattern_8 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        //Pattern Question no-8;
+   /*     int n=sc.nextInt();
+        for(int i=1; i<=n; i++){
+            for(int j=1; j<=n; j++){
+                if(i+j==n+1) {  //+ Formula: Where i+j==n+1; so, i ka start wala or j ka last wala add hoga
+                    System.out.print("*\t");
+                }
+                else {
+                    System.out.print("\t");
+                }
+            }
+            System.out.println();
+        }
+
+    }
+}
+
+// -----> Pattern Question no-9; <-----------
+
+        int n=sc.nextInt();
+        for(int i=1; i<=n; i++){
+            for(int j=1; j<=n; j++){
+                if(i+j==n+1 || i==j) {  //+ Formula: Where i+j==n+1; so, i ka start wala or j ka last wala add hoga
+                    System.out.print("*\t");
+                }
+                else {
+                    System.out.print("\t");
+                }
+            }
+            System.out.println();
+        }
+
+    }
+}
+
+ // Pattern Question no-10; ---> Error code Fix the error;
+        int n=sc.nextInt();
+        int spaces =n/2;
+        int stars =-1;
+        for(int i=1; i<=n; i++){
+            for(int j=1; j<=spaces; j++){
+                System.out.print("\t");
+            }
+            System.out.println("*\t");
+            for(int j=1; j<=stars; j++){
+                System.out.print("\t");
+            }
+            if (i > 1 && i < n) {
+
+                System.out.print("*\t");
+            }
+            if(i<=n/2){
+                spaces--;
+                stars+=2;
+            }
+            else{
+                spaces++;
+                stars-=2;
+            }
+            System.out.println();
+        }
+    }
+}
+
+   // ------> Pattern Question no-11; <-------------
+
+       int n=sc.nextInt();
+        int val=1;
+        for(int i=1; i<=n; i++){
+            for(int j=1; j<=i; j++){
+                System.out.print(val);
+                val++;
+            }
+            System.out.println();
+        }
+    }
+}
+
+  // ------> Pattern Question no-12; <------ Tringle Pattern stars
+        int n=sc.nextInt();
+        int a=0;
+        int b=1;
+        for(int i=1; i<=n; i++) {
+            for (int j=1; j<=i; j++) {
+                System.out.print(a+"\t");
+                int c=a+b;
+                    a=b;
+                    b=c;
+            }
+            System.out.println();
+          }
+        }
+    }
+
