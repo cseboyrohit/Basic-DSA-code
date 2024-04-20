@@ -1,0 +1,156 @@
+ 
+package Introducing_functon;
+
+import java.util.Scanner;
+
+public class Number_System {
+    public static void main(String[] args) {
+     /*   //Binary Number System
+       // int a=0b1010;
+        //Octa Number System
+        //int a=033;
+        //Hexa-Decimal Number;
+        int a=0XB;
+        System.out.println(a);
+    }
+}*/
+
+        //Queston: you are given a decunak nuber n
+        // you are required to conver the nunver n into its corresponding value in base b
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int b=sc.nextInt();
+        int result=getVale(n,b);
+        System.out.println(result);
+
+    }
+    static int getVale(int n, int b) {
+        int rv = 0;
+        int p = 1;
+        while (n > 0) {
+            int digit = n % b;
+            n = n / b;
+            rv += digit * p;
+            p = p * 10;
+        }
+        return rv;
+    }
+}
+
+
+
+--------------------------------------------------------------------
+// Write a program to find npr number Using Function
+ package Introducing_functon;
+import java.util.Scanner;
+/*
+public class Intro_Function {
+    static int fact(int n){
+        if(n==0 || n==1){
+            return 1;
+        }
+        return n*fact(n-1);
+    }
+    static int npr(int n,int r){
+        return fact(n)/fact(n-r);
+    }
+
+    public static void main(String[] args) {
+        System.out.println("Enter Number of  factorial");
+        Scanner sc= new Scanner(System.in);
+        int a=sc.nextInt();
+        int r=sc.nextInt();
+//        System.out.println("Npr of N "+a+"and npr number of r "+r+"is= "+fact(a)/fact(a-r));
+        int npr=npr(a,r);
+        System.out.println(npr);
+    }
+}
+*/
+/*Digit Frequency for Example
+   12235372
+   result 3
+ */
+  public class Intro_Function{
+      static int DigitFrequency(int n, int d){
+          int p=0;
+          while(n>0){
+              int digit=n%10;
+              n=n/10;
+              if(digit==d){
+                  p++;
+              }
+          }
+          return p;
+      }
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        int n=sc.nextInt();
+        int d=sc.nextInt();
+        int result= DigitFrequency(n,d);
+        System.out.println(result);
+
+    }
+}
+----------------------------------------------------------
+
+//convert the number n into its corresponding value in decimal number system
+package Introducing_functon;
+
+import java.util.Scanner;
+
+public class num_system_Q2 {
+    static int getValue(int n,int b){
+        int rv=0;
+        int p=1;
+        int pow=0;
+        while(n>0){
+            int dig=n%10;
+                n=n/10;
+             //   rv+=dig*Math.pow(8,pow);
+             //   pow++;
+            rv+=dig*p; //1 to b
+        }
+        return rv;
+    }
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int b=sc.nextInt();
+        int result=getValue(n,b);
+        System.out.println(result);
+    }
+}
+------------------------------------------------------------------------
+       QUESTON NO-3
+
+package Introducing_functon;
+
+import java.util.Scanner;
+
+public class num_System_Q3 {
+    static int getValue(int b,int n1,int n2){
+        int rv=0;
+        int p=1;
+        int c=0;
+        while(n1>0||n2>0|| c>0){
+            int dig1=n1%10;
+            n1=n1/10;
+            int dig2=n2%10;
+            n2=n2/10;
+            int sum= dig1+dig2+c;
+             c=c/b;
+             sum=sum%b;
+             rv +=sum*p;
+             p=p*10;
+        }
+        return rv;
+   }
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int b=sc.nextInt();
+        int n1=sc.nextInt();
+        int n2=sc.nextInt();
+        int result=getValue(n1,b,n2);
+        System.out.println(result);
+    }
+}
