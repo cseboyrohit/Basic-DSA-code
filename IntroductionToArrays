@@ -1,0 +1,45 @@
+// Write a code to max substract min using array
+import java.util.*;
+public class arrayInJava{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+       /*  int n= sc.nextInt();
+         int[] array= new int[n];
+         for(int i=0; i<array.length; i++){
+              array[i]=sc.nextInt();
+         }
+          int max=array[0];
+          int min=array[0];
+          for(int element:array){
+             if(element > max){
+                max=element;
+             }else if(element< min){
+                min=element;
+             }
+             
+          }
+          int spam12= max-min;
+          System.out.println(spam12);
+         
+    }
+}
+---------------------------------------------------------------------
+         /// Question no 2;
+//you are require to cheak if d number exists in the array a and at what index (0 base ) If found print the index otherwise -1.
+
+     int n= sc.nextInt();
+      int[] arr= new int[n];// creat a array {12,3,45,5,}
+      for(int i=0; i<arr.length; i++){
+          arr[i]=sc.nextInt();
+      }
+      int baseB=sc.nextInt();
+      int idx=-1;
+      for(int i=0; i<arr.length; i++){
+        if(baseB==arr[i]){
+            idx=i;
+           break;
+        }
+         System.out.println(idx);
+      }
+  }
+}
