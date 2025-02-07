@@ -1,4 +1,4 @@
-// Prime number abd not prime number day_1
+// Prime number abd not prime number day_1 problem 
 
         import java.util.Scanner;
         public class polymorphim {
@@ -12,4 +12,4 @@
               System.out.println("not prime");
           }
        }
-    }
+    
